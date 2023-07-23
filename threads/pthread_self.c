@@ -16,7 +16,7 @@ printf("thread is created successfully\n");
 else
 printf("thread is not created\n");
 a=pthread_self(); 		//returns the current thread_id
-printf("%d\n",a);
+printf("current thread id is %d\n",a);
 pthread_join(tid,NULL);		//wait for the termination of thread
 printf("this line is executing after termination of thread\n");
 }
